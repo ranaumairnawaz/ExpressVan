@@ -1,0 +1,207 @@
+============================================================
+  REMOVAL BOOKING WEBSITE — PROPOSED IMPROVEMENTS
+  Prepared for: [Client Name]
+  Date: October 2026
+============================================================
+
+This document outlines the improvements we plan to make to your
+removal booking website. These changes will make the website faster,
+easier to use for your customers, and easier to manage for your team.
+
+------------------------------------------------------------
+SECTION 1 — BOOKING EXPERIENCE (WHAT THE CUSTOMER SEES)
+------------------------------------------------------------
+
+1. LIVE PRICE CALCULATOR ON BOOKING PAGE
+   Currently, customers only see the price AFTER they fill in all
+   their details and click "Next". We will add a live price display
+   that updates automatically as they select their van, helpers, date,
+   and addresses. No more surprises at the end.
+
+2. SMOOTHER BOOKING JOURNEY (NO MORE PAGE RELOADS)
+   Right now the booking has 3 separate pages that fully reload every
+   time. We will make it feel like one smooth continuous form where
+   customers move between steps without the page jumping or resetting.
+   This makes the process feel faster and more professional.
+
+3. ROUTE MAP SHOWN DURING BOOKING
+   We will show customers a live map with their pickup and drop-off
+   route during the booking process, so they can confirm the right
+   addresses before paying.
+
+4. BETTER INVENTORY / ITEMS LIST
+   Instead of customers typing what they want to move, we will give
+   them a proper checklist with common items (bedroom furniture,
+   washing machine, boxes, etc.) and quantities. This also helps
+   your team know exactly what to expect on the day.
+
+5. RESCHEDULE & CANCELLATION OPTION
+   At the moment there is no way for customers to request a reschedule
+   or cancellation online. We will add a simple form for this, with
+   admin approval before any changes are confirmed.
+
+------------------------------------------------------------
+SECTION 2 — CUSTOMER ACCOUNT & COMMUNICATION
+------------------------------------------------------------
+
+6. CUSTOMER ACCOUNT PORTAL
+   Customers will be able to create a simple account where they can:
+   - View their current and past bookings
+   - Download their invoices
+   - Request changes to their booking
+   - Track the status of their job
+   This removes the current clunky OTP (one-time code) system.
+
+7. SMS TEXT MESSAGE NOTIFICATIONS
+   We will add text message (SMS) alerts to customers at key points:
+   - When their booking is confirmed
+   - A reminder the day before their move
+   - When the van is on the way
+   - When a payment reminder is due
+   This dramatically improves the customer experience and reduces
+   no-shows and missed payments.
+
+8. WHATSAPP BUTTON
+   A WhatsApp chat button will be added to the website so customers
+   can quickly reach you. Booking confirmations can also optionally
+   be sent via WhatsApp.
+
+9. AUTOMATIC REVIEW REQUEST
+   After a job is completed, the system will automatically send the
+   customer an email 24 hours later asking them to leave a review on
+   Google. This runs itself — no action needed from your team.
+
+------------------------------------------------------------
+SECTION 3 — PAYMENTS
+------------------------------------------------------------
+
+10. MORE PAYMENT OPTIONS
+    Currently only card payment through Stripe is available. We will
+    add:
+    - PayPal (many customers prefer this)
+    - Bank Transfer / BACS (for business clients)
+    - "Pay on the Day" / Cash option (marked as unpaid until confirmed)
+
+11. CONFIGURABLE DEPOSIT PERCENTAGE
+    Right now the deposit is fixed at 30% and cannot be changed without
+    a developer. We will add a simple setting in your admin panel where
+    you can change the deposit percentage yourself (e.g. to 25% or 50%).
+
+------------------------------------------------------------
+SECTION 4 — ADMIN PANEL (WHAT YOUR TEAM SEES)
+------------------------------------------------------------
+
+12. REVENUE & ANALYTICS DASHBOARD
+    We will add a proper dashboard on the admin homepage showing:
+    - Total revenue this week / month / year
+    - Number of bookings by status (pending, confirmed, completed, etc.)
+    - Most popular van types
+    - Busiest days / times
+    - Revenue by area / postcode zone
+    All displayed with clear charts and numbers.
+
+13. BETTER ORDER SEARCH & FILTERING
+    Right now all orders are in one big table. We will add filters so
+    your team can quickly find orders by:
+    - Date range
+    - Status (unpaid, confirmed, completed, cancelled)
+    - Customer name or email
+    - Van type
+    - Postcode or city
+
+14. CREW / DRIVER ASSIGNMENT
+    We will add the ability to assign a specific driver or crew member
+    to each job. The crew member will:
+    - Receive an email/SMS notification when assigned
+    - Be able to view their jobs for the day
+    - Mark a job as started and completed
+    This replaces manual WhatsApp coordination with your drivers.
+
+15. DRIVER / CREW MOBILE-FRIENDLY VIEW
+    A simple mobile-friendly page for drivers to see their jobs for
+    the day, get navigation directions, and mark jobs done — all from
+    their phone without needing an app download.
+
+------------------------------------------------------------
+SECTION 5 — PERFORMANCE & RELIABILITY (BEHIND THE SCENES)
+------------------------------------------------------------
+
+16. FASTER PAGE LOADING
+    We will optimise how the website fetches data from the database
+    and caches common information (like Google Maps distances) so
+    pages load much faster — especially during busy periods.
+
+17. EMAIL SENDING IN THE BACKGROUND
+    Currently when a customer books, the website waits while it sends
+    emails before completing the page. We will move email sending to
+    a background process so customers get an instant response and
+    emails still go out reliably.
+
+18. WEBSITE SPEED & MOBILE OPTIMISATION
+    A full review of loading times on mobile devices, with improvements
+    to make the booking pages fast and smooth on phones — where most
+    customers are likely visiting from.
+
+------------------------------------------------------------
+SECTION 6 — QUICK WINS (SMALL BUT IMPACTFUL)
+------------------------------------------------------------
+
+19. PAYMENT REMINDER EMAILS (ALREADY PARTLY DONE)
+    Improve the automated payment reminder emails with clearer
+    formatting and direct payment links so customers can pay in
+    one click.
+
+20. BOOKING CONFIRMATION EMAIL IMPROVEMENTS
+    Update the booking confirmation email to look more professional,
+    include the route summary, and have a clear "View My Booking"
+    button.
+
+21. INVOICE PDF DOWNLOAD
+    Allow customers and admins to download a clean PDF invoice for
+    each booking directly from the website.
+
+22. GOOGLE REVIEWS WIDGET ON WEBSITE
+    Show your latest Google Reviews automatically on the homepage to
+    build trust with new visitors.
+
+------------------------------------------------------------
+SUMMARY — WHAT THIS ACHIEVES
+------------------------------------------------------------
+
+BETTER FOR CUSTOMERS:
+  - Smoother, faster, more modern booking experience
+  - Text message and WhatsApp updates
+  - Self-service account to manage bookings
+  - More payment options
+
+BETTER FOR YOUR BUSINESS:
+  - Clear revenue and performance dashboard
+  - Driver/crew job assignment built in
+  - Automatic review collection
+  - Configurable settings you control yourself
+
+BETTER TECHNICALLY:
+  - Faster, more reliable website
+  - Fewer manual tasks for your team
+  - Easier to grow and add features in the future
+
+------------------------------------------------------------
+NOTE TO DEVELOPER (INTERNAL REFERENCE)
+------------------------------------------------------------
+
+Priority order for implementation:
+  Phase 1 (Foundation):     Items 1, 7, 11, 12, 16, 17
+  Phase 2 (UX Upgrade):     Items 2, 3, 6, 13, 19, 20
+  Phase 3 (Growth Features): Items 4, 5, 8, 9, 10, 14, 15, 21, 22
+
+Tech decisions already made:
+  - Keep Laravel backend
+  - Add Laravel Livewire for reactive UI (avoids full SPA rebuild)
+  - Add Redis for caching and queue-based email
+  - SMS via Twilio or Vonage
+  - PDF invoices via Laravel DomPDF or Spatie
+
+============================================================
+  END OF DOCUMENT
+  Reference file saved internally as: project_analysis.md
+============================================================

@@ -1,0 +1,1 @@
+<?php /**PATH C:\XAMPP\htdocs\removal\@core\resources\views/frontend/partials/supportbar.blade.php ENDPATH**/ ?>
